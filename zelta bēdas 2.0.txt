@@ -1,0 +1,26 @@
+// 1.jautājums - Lai saglabātu vārdu, monētu skaitu utt. es izmantotu int, jo tādām lietām nav vajadzīgi decimāli, bet gan apaļi skaitļi.
+// 2. jautājums  - if-else komanda liek datoram saprast kas ir noticis un kā tālāk rīkoties atkarībā no tā kas ir noticis.
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x;
+    
+    cout << "Tu iegāji pamestas pils dārgumu istabā, cik daudz monētas tu atradi vai pazaudēji?" << endl;
+    
+    cin >> x;
+
+cout << endl;
+
+if (x == 0){
+    cout << "Aizvien nabags? Ganjau citu reizi atradīsi kaut ko.";
+}
+else if (x < 0){
+    x = (x * -1);
+ cout << "Uj, izskatās ka tevi apzaga kāds mošķis." << "Tu zaudēji " << x << " monētas.";
+}
+else if (x > 0){
+    cout << "Opa tu atradi veselas " << x << " monētas. Malacīts.";
+}
+    return 0;
+}

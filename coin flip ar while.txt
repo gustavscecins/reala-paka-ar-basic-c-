@@ -1,0 +1,36 @@
+#include <cstdlib>  
+#include <ctime>    
+#include <iostream>
+using namespace std;
+
+int main(){
+   int x;
+    int n;
+    int y = 0;
+    cout << "ievadi cik naudu liksi uz galda: " << endl;
+    cin >> n;
+    cout << endl;
+    
+    for (int i; i<=n; i++){
+        y = y + i;
+       
+        
+    }
+        cout << y << endl;
+        
+        cout << "tava nauda ir pienemta, redzēsim vai esi veiksmīgs, griezisim ruleti" << endl<< " izvelies 1 - 36" << endl;
+        
+        cin >> x;
+        
+        srand (time(NULL));
+    int f = (rand()%36) ;
+    
+        
+        if (f == x){
+            cout << "Wow nu veiksme gan" << endl;
+            cout << y * 2;
+        }
+        else {
+            cout << "dandal";
+        }
+    }

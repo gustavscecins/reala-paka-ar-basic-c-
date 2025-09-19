@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+
+    cout << "Ievadi skaitli: ";
+    cin >> x;
+
+    
+    if (x == 0) {
+        cout << "Kļūda: nedrīkst dalīt ar 0!" << endl;
+        
+    }
+    if (100 % x == 0) {
+        cout << "Tas ir pāra skaitlis." << endl;
+    } else {
+        cout << "Tas ir nepāra skaitlis." << endl;
+    }
+
+    return 0;
+}
